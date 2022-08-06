@@ -24,6 +24,7 @@
   <div class="wrapper">
     {% block blocks %}
     {% include 'header/block.php' %}
+    {% include 'quiz/block.php' %}
     {% endblock %}
   </div>
 
