@@ -25,6 +25,7 @@
     {% block blocks %}
     {% include 'header/block.php' %}
     {% include 'quiz/block.php' %}
+    {% include 'thanks/block.php' %}
     {% endblock %}
   </div>
 
