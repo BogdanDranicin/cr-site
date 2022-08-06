@@ -1,0 +1,68 @@
+*, 
+*::before, 
+*::after {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+html {
+    font-size: 10px;
+}
+
+body {
+    font-family: "TTNorms", serif;
+    font-weight: 400;
+    font-size: 3.1rem;
+    line-height: 117%;
+    color: #000;
+    background: #FFF;
+    position: relative;
+}
+
+
+img {
+    max-width: 100%;
+    border: 0;
+}
+
+a {
+    color: inherit;
+    outline: none;
+    transition: 0.3s;
+    text-decoration: none;
+}
+
+ul {
+    list-style: none;
+}
+
+button,
+input,
+select,
+textarea {
+    font-family: inherit;
+    color: inherit;
+}
+
+::placeholder {
+    color: inherit;
+}
+:-ms-input-placeholder {
+    color: inherit;
+}
+
+.section{
+    padding: 7.6rem 2rem;
+}
+
+.container {
+    max-width: 120rem;
+    margin: 0 auto;
+}
+.text{
+    font-size: inherit;
+}
+.title{
+    font-family: "Buran-USSR", serif;
+    font-size: 8rem;
+}
