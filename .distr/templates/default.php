@@ -24,8 +24,12 @@
   <div class="wrapper">
     {% block blocks %}
     {% include 'header/block.php' %}
+    {% include 'test-main/block.php' %}
+    {% include 'test-video/block.php' %}
     {% include 'quiz/block.php' %}
     {% include 'thanks/block.php' %}
+    {% include 'related/block.php' %}
+    {% include 'footer/block.php' %}
     {% endblock %}
   </div>
 

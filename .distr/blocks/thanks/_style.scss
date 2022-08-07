@@ -44,15 +44,6 @@
 					}
 				}
 			}
-			&_sentr{
-				position: absolute;
-				width: 1rem;
-				height: 1rem;
-				border-radius: 50%;
-				top: 2.5rem;
-				left: 2.5rem;
-				background: #000;
-			}
 		}
 	}
 	&__btn{
@@ -60,9 +51,9 @@
 		justify-content: flex-end;
 		&-main{
 			border: #000 0.4rem solid;
-			font-size: 2.4rem;
+			font-size: 2.2rem;
 			line-height: 3.2rem;
-			padding: 1.0rem 1.6rem;
+			padding: 0.8rem 2rem;
 			font-weight: 500;
 		}
 	}

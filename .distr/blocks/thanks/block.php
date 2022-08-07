@@ -1,4 +1,4 @@
-<section class="thanks">
+<section class="thanks section">
 	<div class="container thanks__container">
 		<h2 class="thanks__title">
 			Спасибо, что прошли тестирование!
@@ -7,7 +7,6 @@
 			<div class="thanks__subtitle-watch">
 				<div class="thanks__subtitle-watch_minutes"></div>
 				<div class="thanks__subtitle-watch_hour"></div>
-				<div class="thanks__subtitle-watch_sentr"></div>
 			</div>
 			Скоро вам станут доступны результаты тестирования
 		</div>
