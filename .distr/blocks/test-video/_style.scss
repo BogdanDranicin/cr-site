@@ -1,0 +1,41 @@
+.test-video{
+	&__container{
+
+	}
+	&__title{
+		font-family: "Buran-USSR";
+		font-size: 6.3rem;
+		line-height: 3.4rem;
+		font-weight: 400;
+		padding-bottom: 7rem;
+	}
+	&__video{
+		position: relative;
+		&-btn{
+			display: flex;
+			justify-content: flex-end;
+			gap: 4.5rem;
+			margin-top: 6.7rem;
+			&_all{
+				border: #AFAFAF 0.4rem solid;
+				font-size: 2.7rem;
+				font-weight: 500;
+				color: #AFAFAF;
+				line-height: 3.1rem;
+				padding: 1rem 2.5rem;
+			}
+			&_miss{
+				border: #000 0.4rem solid;
+				font-size: 2.7rem;
+				font-weight: 500;
+				line-height: 3.1rem;
+				padding: 1rem 2.5rem;
+			}
+		}
+		::before{
+			content: '';
+			position: absolute;
+			
+		}
+	}
+}

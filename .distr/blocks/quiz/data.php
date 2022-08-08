@@ -2,6 +2,7 @@
 {% set close_questions = [
     {
         active: 'active',
+        questions_lengh: '5',
         question_num: '1',
         question: 'Когда началась Великая Отечественная Война?',
         answers: [
@@ -29,7 +30,8 @@
     ,
     {
         question_num: '2',
-        question: 'Когда началась Великая Отечественная Война?',
+        questions_lengh: '5',
+        question: 'Когда?',
         answers: [
             {
                 answer_num: '1',
@@ -51,5 +53,36 @@
                 answer: '1941'
             }
         ]
+    }
+    ,
+    {
+        question_num: '3',
+        questions_lengh: '5',
+        question: 'Когда ы?',
+        answers: [
+            {
+                answer_num: '1',
+                answer: 'ы?'
+            }
+            ,
+            {
+                answer_num: '4',
+                answer: 'да'
+            }
+        ]
+    }
+]%}
+
+{% set open_questions = [
+    {
+        questions_lengh: '5',
+        question_num: '4',
+        question: 'Когда началась Великая Отечественная Война?'  
+    }
+    ,
+    {
+        questions_lengh: '5',
+        question_num: '5',
+        question: 'Когда?'  
     }
 ]%}

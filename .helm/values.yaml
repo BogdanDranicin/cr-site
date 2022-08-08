@@ -1,0 +1,8 @@
+
+redirects: []
+
+### Зеркала
+mirrors:
+  - host: synergy.ru/cr-reserve
+    path: /test
+    query: version=test

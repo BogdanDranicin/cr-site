@@ -1,0 +1,21 @@
+.footer{
+	padding: 2rem 0;
+	&__container{
+		display: flex;
+		justify-content: space-between;
+	}
+	&__info{
+		font-size: 1.6rem;
+		line-height: 1.8rem;
+		color: #757575;
+		div{
+			margin-bottom: 1.2rem;
+		}
+	}
+	&__contacts{
+		width: 15%;
+		display: flex;
+		justify-content: space-between;
+		align-items: center;
+	}
+}

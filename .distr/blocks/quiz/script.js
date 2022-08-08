@@ -5,7 +5,7 @@ const SimpleQuiz = {
         let counter = 1;
         questions.first().addClass('active');
 
-        $('form.quiz__card .quiz__conteiner-btn_next').on('click', (e) => {
+        $('form.quiz__card .quiz__btn-next').on('click', (e) => {
             e.preventDefault();
             if (counter < amount && this.checkAnswer()) {
                 questions.removeClass('active');
@@ -35,7 +35,7 @@ const SimpleQuiz = {
                 // {name: 'resultTpl', value: this.config['resultTpl']}
             ]
         );
-        $('form.quiz__card .btn').remove();
+        $('form.quiz__card .quiz__btn-next').remove();
         $.post(
             this.config.connectorUrl, { data: JSON.stringify(data) },
             (data) => {
@@ -65,3 +65,4 @@ $(document).ready(() => {
     console.log('Initialize complete', SimpleQuiz.config);
     // SimpleQuiz.getResult();
 })
+SimpleQuiz.config = JSON.parse('{"res_id":2,"connectorUrl":"\/assets\/components\/simplequiz\/connector.php"}');

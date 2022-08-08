@@ -1,10 +1,11 @@
-*, 
-*::before, 
+*,
+*::before,
 *::after {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
+
 html {
     font-size: 10px;
 }
@@ -18,7 +19,6 @@ body {
     background: #FFF;
     position: relative;
 }
-
 
 img {
     max-width: 100%;
@@ -47,11 +47,12 @@ textarea {
 ::placeholder {
     color: inherit;
 }
+
 :-ms-input-placeholder {
     color: inherit;
 }
 
-.section{
+.section {
     padding: 7.6rem 2rem;
 }
 
@@ -59,10 +60,26 @@ textarea {
     max-width: 120rem;
     margin: 0 auto;
 }
-.text{
+
+.text {
     font-size: inherit;
 }
-.title{
+
+.title {
     font-family: "Buran-USSR", serif;
     font-size: 8rem;
+}
+
+.button {
+    padding: 1.6rem 3.6rem 1.6rem 2.6rem;
+    border: 0.73rem solid #000;
+    color: #000;
+    font-weight: 500;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    &:hover {
+        border-color: #DA0037;
+        color: #DA0037;
+    }
 }
