@@ -72,3 +72,17 @@
         ]
     }
 ]%}
+
+{% set open_questions = [
+    {
+        questions_lengh: '5',
+        question_num: '4',
+        question: 'Когда началась Великая Отечественная Война?'  
+    }
+    ,
+    {
+        questions_lengh: '5',
+        question_num: '5',
+        question: 'Когда?'  
+    }
+]%}

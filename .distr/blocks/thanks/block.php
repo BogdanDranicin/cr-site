@@ -11,7 +11,7 @@
 			Скоро вам станут доступны результаты тестирования
 		</div>
 		<div class="thanks__btn">
-			<a href="" class="thanks__btn-main">На главную</a>
+			<a href="" class="thanks__btn-main button">На главную</a>
 		</div>
 	</div>
 </section>

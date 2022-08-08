@@ -78,4 +78,8 @@ textarea {
     display: flex;
     align-items: center;
     justify-content: center;
+    &:hover {
+        border-color: #DA0037;
+        color: #DA0037;
+    }
 }

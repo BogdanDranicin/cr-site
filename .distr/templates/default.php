@@ -1,3 +1,10 @@
+<?php
+
+$ROOT = $_SERVER['DOCUMENT_ROOT'] . '/';
+$version = isset($_GET['version']) ? urldecode( strtolower($_GET['version']) ) : '';
+
+include_once $ROOT . 'version.php';
+?>
 <!DOCTYPE html>
 <html lang="ru">
 <head>
@@ -19,16 +26,23 @@
   
 </head>
 
-<body class="">
+<body class="<?= $version ? 'version-' . $version : '' ?>">
 
   <div class="wrapper">
     {% block blocks %}
     {% include 'header/block.php' %}
-    {% include 'test-main/block.php' %}
-    {% include 'test-video/block.php' %}
-    {% include 'quiz/block.php' %}
-    {% include 'thanks/block.php' %}
-    {% include 'related/block.php' %}
+    <?php if ( $version == '' ) { ?>
+      {% include 'main/block.php' %}
+      {% include 'event/block.php' %}
+      {% include 'stuff/block.php' %}
+    <?php } ?>
+    <?php if ( $version == 'test' ) { ?>
+      {% include 'test-main/block.php' %}
+      {% include 'test-video/block.php' %}
+      {% include 'quiz/block.php' %}
+      {% include 'thanks/block.php' %}
+      {% include 'related/block.php' %}
+    <?php } ?>
     {% include 'footer/block.php' %}
     {% endblock %}
   </div>

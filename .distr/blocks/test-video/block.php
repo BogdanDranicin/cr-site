@@ -4,8 +4,8 @@
 		<div class="test-video__video">
 			<a href=""><img src="img/test-video/img.png" alt=""></a>
 			<div class="test-video__video-btn">
-				<a href="" class="test-video__video-btn_all">Все видео</a>
-				<a href="" class="test-video__video-btn_miss">Пропустить</a>
+				<a href="" class="test-video__video-btn_all button">Все видео</a>
+				<a href="" class="test-video__video-btn_miss button">Пропустить</a>
 			</div>
 		</div>
 </section>

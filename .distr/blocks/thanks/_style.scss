@@ -1,60 +1,60 @@
-.thanks{
-	&__title{
-		color: #8E0124;
-		font-size: 11.5rem;
-		line-height: 14rem;
-		margin-bottom: 6.5rem;
-		font-family: "Buran-USSR";
-	}
-	&__subtitle{
-		display: flex;
-		justify-content: space-around;
-		align-items: center;
-		font-size: 4rem;
-		line-height: 6.5rem;
-		margin-bottom: 7.1rem;
-		&-watch{
-			position: relative;
-			width: 7.5rem;
-			height: 7.5rem;
-			border: #000 0.8rem solid;
-			border-radius: 50%;
-			&_hour{
-				position: absolute;
-				width: 0.6rem;
-				height: 2.5rem;
-				left: 2.7rem;
-				top: 0.5rem;
-				background: #000;
-				border-radius: 1rem;
-			}
-			&_minutes{
-				position: absolute;
-				width: 0.6rem;
-				height: 2.5rem;
-				left: 2.7rem;
-				top: 2.7rem;
-				background: #000;
-				border-radius: 1rem;
-				animation: now 2.5s infinite linear;
-				transform-origin: 50% 10%;
-				@keyframes now {
-					100%{
-						transform: rotate(360deg);
-					}
-				}
-			}
-		}
-	}
-	&__btn{
-		display: flex;
-		justify-content: flex-end;
-		&-main{
-			border: #000 0.4rem solid;
-			font-size: 2.2rem;
-			line-height: 3.2rem;
-			padding: 0.8rem 2rem;
-			font-weight: 500;
-		}
-	}
+.thanks {
+    &__title {
+        color: #8E0124;
+        font-size: 11.5rem;
+        line-height: 14rem;
+        margin-bottom: 6.5rem;
+        font-family: "Buran-USSR";
+    }
+    &__subtitle {
+        display: flex;
+        justify-content: space-around;
+        align-items: center;
+        font-size: 4rem;
+        line-height: 6.5rem;
+        margin-bottom: 7.1rem;
+        &-watch {
+            position: relative;
+            width: 7.5rem;
+            height: 7.5rem;
+            border: #000 0.8rem solid;
+            border-radius: 50%;
+            &_hour {
+                position: absolute;
+                width: 0.6rem;
+                height: 2.75rem;
+                left: 2.7rem;
+                top: 0.5rem;
+                background: #000;
+            }
+            &_minutes {
+                position: absolute;
+                width: 0.6rem;
+                height: 2.5rem;
+                left: 2.7rem;
+                top: 2.7rem;
+                background: #000;
+                border-top-left-radius: 1rem;
+                border-top-right-radius: 1rem;
+                animation: now 1.5s infinite linear;
+                transform-origin: 50% 10%;
+                @keyframes now {
+                    100% {
+                        transform: rotate(360deg);
+                    }
+                }
+            }
+        }
+    }
+    &__btn {
+        display: flex;
+        justify-content: flex-end;
+        &-main {
+            border: #000 0.4rem solid;
+            font-size: 2.2rem;
+            line-height: 3.2rem;
+            padding: 0.8rem 2rem;
+            font-weight: 500;
+        }
+    }
 }
