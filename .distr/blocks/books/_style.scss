@@ -1,0 +1,37 @@
+.books{
+	&__section{
+		padding-top: 18.5rem;
+	}
+	&__container{
+		padding-bottom: 12rem;
+	}
+	&__title{
+		font-family: "Buran-USSR";
+		font-size: 5rem;
+		line-height: 3.4rem;
+		font-weight: 400;
+		padding-bottom: 7rem;
+	}
+	&__block{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 5rem;
+		&-item{
+			width: 34rem;
+			height: 25.6rem;
+			position: relative;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+			&_img{
+				position: absolute;
+				z-index: 999;
+			}
+			// &_title{
+			// 	border: 0.4rem #8E0124 solid;
+			// 	color: #8E0124;
+			// }
+		}
+	}
+}

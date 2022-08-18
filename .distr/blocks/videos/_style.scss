@@ -1,0 +1,52 @@
+.videos{
+	&__section{
+		padding-top: 18.5rem;
+	}
+	&__container{
+		padding-bottom: 12rem;
+	}
+	&__title{
+		font-family: "Buran-USSR";
+		font-size: 5rem;
+		line-height: 3.4rem;
+		font-weight: 400;
+		padding-bottom: 7rem;
+	}
+	&__block{
+		display: flex;
+		flex-wrap: wrap;
+		justify-content: space-between;
+		gap: 5rem;
+		&-item{
+			width: 34rem;
+			height: 25.6rem;
+			position: relative;
+			display: flex;
+			align-items: flex-start;
+			justify-content: flex-end;
+			&_img{
+				position: absolute;
+				z-index: 999;
+			}
+			&::after{
+				content: 'Название видео';
+				position: absolute;
+				width: 27rem;
+				height: 8rem;
+				font-size: 2.2rem;
+				color: #8E0124;
+				bottom: 0;
+				left: 0;
+				border: 0.4rem #8E0124 solid;
+				padding: 1.5rem 5rem 1.5rem 2rem;
+			}
+			&:hover{
+				&::after{
+					background: #8E0124;
+					color: #fff;
+					transition: 0.5s;
+				}
+			}
+		}
+	}
+}
