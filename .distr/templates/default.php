@@ -44,7 +44,13 @@ include_once $ROOT . 'version.php';
       {% include 'test-video/block.php' %}
       {% include 'quiz/block.php' %}
       {% include 'thanks/block.php' %}
-      {% include 'related/block.php' %}
+      {#% include 'related/block.php' %#}
+    <?php } ?>
+    <?php if ( $version == 'videos' ) { ?>
+      {% include 'videos/block.php' %}
+    <?php } ?>
+    <?php if ( $version == 'books' ) { ?>
+      {#% include 'books/block.php' %#}
     <?php } ?>
     {% include 'footer/block.php' %}
     {% endblock %}

@@ -6,3 +6,15 @@ mirrors:
   - host: synergy.ru/cr-reserve
     path: /test
     query: version=test
+
+  - host: synergy.ru/cr-reserve
+    path: /videos
+    query: version=videos
+
+  - host: synergy.ru/cr-reserve
+    path: /books
+    query: version=books
+
+  - host: synergy.ru/cr-reserve
+    path: /calendar
+    query: version=calendar
