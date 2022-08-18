@@ -1,7 +1,7 @@
 <section class="thanks section">
 	<div class="container thanks__container">
 		<h2 class="thanks__title">
-			Спасибо, что прошли тестирование!
+			Спасибо, что прошли <br>тестирование!
 		</h2>
 		<div class="thanks__subtitle">
 			<div class="thanks__subtitle-watch">

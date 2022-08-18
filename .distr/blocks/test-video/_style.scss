@@ -4,38 +4,79 @@
 	}
 	&__title{
 		font-family: "Buran-USSR";
-		font-size: 6.3rem;
+		font-size: 5rem;
 		line-height: 3.4rem;
 		font-weight: 400;
 		padding-bottom: 7rem;
 	}
 	&__video{
-		position: relative;
+		background: #762D2D;
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: flex-end;
+		padding: 0 14.6rem;
+		box-shadow: 10px 14px 15px rgba(0, 0, 0, 0.25);
+		width: 119.68rem;
+		height: 80.969rem;
 		&-btn{
 			display: flex;
-			justify-content: flex-end;
 			gap: 4.5rem;
-			margin-top: 6.7rem;
+			margin-top: 5.5rem;
+			padding-bottom: 6.5rem;
 			&_all{
-				border: #AFAFAF 0.4rem solid;
+				border: #fff 0.4rem solid;
 				font-size: 2.7rem;
 				font-weight: 500;
-				color: #AFAFAF;
+				color: #fff;
 				line-height: 3.1rem;
 				padding: 1rem 2.5rem;
+				// &:hover{
+				// 	color: #111;
+				// 	border-color: #111;
+				// 	transition: 0.5s;
+				// }
 			}
 			&_miss{
-				border: #000 0.4rem solid;
+				border: #fff 0.4rem solid;
 				font-size: 2.7rem;
 				font-weight: 500;
+				color: #fff;
 				line-height: 3.1rem;
 				padding: 1rem 2.5rem;
+				// &:hover{
+				// 	color: #111;
+				// 	border-color: #111;
+				// 	transition: 0.5s;
+				// }
 			}
 		}
-		::before{
-			content: '';
-			position: absolute;
-			
+		&-start{
+			position: relative;
+			&::after{
+				content: '';
+				position: absolute;
+				width: 0;
+				height: 0;
+				cursor: pointer;
+				border-top: 3.5rem solid transparent;
+				border-left: 6rem solid #8E0124;
+				border-bottom: 3.5rem solid transparent;
+				left: 44rem;
+				top: 22.5rem;
+			}
+			&::before{
+				content: '';
+				width: 16rem;
+				height: 16rem;
+				cursor: pointer;
+				position: absolute;
+				border: #fff 0.1rem solid;
+				background: #fff;
+				border-radius: 50%;
+				left: 38rem;
+    			top: 18rem;
+			}
 		}
 	}
 }
