@@ -31,11 +31,11 @@
 				color: #fff;
 				line-height: 3.1rem;
 				padding: 1rem 2.5rem;
-				// &:hover{
-				// 	color: #111;
-				// 	border-color: #111;
-				// 	transition: 0.5s;
-				// }
+				&:hover{
+					color: #111;
+					border-color: #111;
+					transition: 0.5s;
+				}
 			}
 			&_miss{
 				border: #fff 0.4rem solid;
@@ -44,11 +44,11 @@
 				color: #fff;
 				line-height: 3.1rem;
 				padding: 1rem 2.5rem;
-				// &:hover{
-				// 	color: #111;
-				// 	border-color: #111;
-				// 	transition: 0.5s;
-				// }
+				&:hover{
+					color: #111;
+					border-color: #111;
+					transition: 0.5s;
+				}
 			}
 		}
 		&-start{
