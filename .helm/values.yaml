@@ -20,5 +20,5 @@ mirrors:
     query: version=calendar
 
   - host: synergy.ru/cr-reserve
-    path: /personal-account
-    query: version=personal-account
+    path: /profile
+    query: version=profile
