@@ -5,7 +5,7 @@
     width: 100%;
     height: 6.5rem;
     background: #fff;
-    box-shadow: 0px 0.4rem 0.1rem rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 0.4rem 0.1rem rgba(0, 0, 0, 0.05);
     font-size: 1.74rem;
     font-family: "TTNormsPro", serif;
     font-weight: 500;
@@ -14,22 +14,154 @@
         justify-content: space-between;
         align-items: center;
     }
-    &__logo {}
+    &__logo {
+        display: flex;
+        align-items: center;
+    }
+    &__search {
+        &-form {
+            width: 23.44rem;
+            position: relative;
+            border-radius: 6px;
+        }
+        &-input {
+            width: 100%;
+            height: 3.125rem;
+            padding-left: 1.25rem;
+            padding-right: 1.5rem;
+            outline: none;
+            background: transparent;
+            font-weight: 500;
+            font-size: 1.4rem;
+            line-height: 111%;
+            border: .15626rem solid #000000;
+            border-radius: 0.31252rem;
+        }
+        &-button {
+            height: 42px;
+            width: 42px;
+            position: absolute;
+            top: 0;
+            right: 0;
+            cursor: pointer;
+            border: none;
+            outline: none;
+            background: transparent;
+        }
+    }
     .nav {
         &__list {
             display: flex;
-            gap: 4.4rem;
+            gap: 1rem;
             &-item {
+                position: relative;
+                display: flex;
+                justify-content: center;
+                height: 6.5rem;
+                &:hover{
+                    background: #D9D9D9;
+                }
                 &_link {
-                    line-height: 65px;
+                    line-height: 6.5rem;
+                    padding: 0 2.05rem;
+                    width: 100%;
+                    cursor: pointer;
+                }
+                .nav__list{
+                    position: absolute;
+                    overflow: hidden;
+                    max-height: 0rem;
+                    transition: 0.3s;
+                    top: 6.5rem;
+                    right: 0;
+                    display: flex;
+                    flex-direction: column;
+                    width: 100%;
+                    min-width: 21.7rem;
+                    background: #FFFFFF;
+                    box-shadow: 0px 0.4rem 3.4rem rgba(0, 0, 0, 0.25);
+                }
+                &.active{
+                    background: #D9D9D9;
+                    .nav__list{
+                        padding: 2.4rem 0;
+                        max-height: 90rem;
+                        justify-content: flex-start;
+                        gap: 0;
+                        &-item{
+                            &:hover{
+                                background: #D9D9D9;
+                            }
+                        }
+                    }
                 }
             }
         }
     }
     &__authorization {
-        border-radius: 50%;
-        background: #ccc;
-        width: 5rem;
-        height: 5rem;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        gap: .7rem;
+        width: 9.5rem;
+        height: 6.5rem;
+        margin-left: 1.8rem;
+        cursor: pointer;
+        position: relative;
+        &-avatar{
+            border-radius: 50%;
+            background: #AEAEAE;
+            width: 3.8rem;
+            height: 3.8rem;
+            overflow: hidden;
+        }
+        svg{
+            transition: .2s;
+        }
+        .login{
+            overflow: hidden;
+            max-height: 0rem;
+            top: 6.5rem;
+            right: 0;
+            position: absolute;
+            min-width: 30rem;
+            transition: .2s;
+            &__form{
+                display: flex;
+                flex-direction: column;
+                gap: 1.98rem;
+                padding: 3.645rem 3.09rem 3.486rem;
+                background: white;
+            }
+            &__field{
+                padding: 1.109rem 1.268rem;
+                display: flex;
+                justify-content: space-between;
+                align-items: center;
+                border: 0.792381px solid #CFD3D8;
+                border-radius: 3.16952px;
+                &:focus{
+                    background-color: #707C8B;
+                }
+            }
+            &__input{
+                color: #11253D;
+                width: 100%;
+                font-weight: 400;
+                font-size: 1.10933rem;
+                line-height: 143%;
+            }
+        }
+        &.authorization{
+            background: #E6E6E6;
+            .header__autorization{
+                &-vector{
+                    transform: rotate(180deg);
+                }
+            }
+            .login{
+                max-height: 90rem;
+            }
+        }
     }
 }
