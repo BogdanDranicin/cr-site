@@ -9,7 +9,7 @@
             </ul>
         </nav>
         <form action="" class="header__search-bar">
-            <input type="search" name="search" pattern=".*\S.*" required>
+            <input type="search" name="search" pattern="\f002" required>
             <button class="header__search-bar_btn" type="submit">
                 <span>Search</span>
             </button>

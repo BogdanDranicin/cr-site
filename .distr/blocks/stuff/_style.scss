@@ -6,10 +6,10 @@
     }
     &__title {
         &._1 {
-            margin-bottom: 6.7rem;
+            margin-bottom: 10rem;
         }
         &._2 {
-            margin-bottom: 5.5rem;
+            margin-bottom: 10rem;
         }
     }
     &__items {
@@ -40,18 +40,18 @@
     &__materials {
         display: flex;
         gap: 5.6rem;
-        justify-content: space-between;
+        justify-content: flex-start;
         &-item {
             width: 100%;
-            max-width: 33.3%;
+            max-width: 28%;
             height: 8.2rem;
-            padding: 1rem 1.5rem;
+            padding: 1rem 1rem;
             font-size: 2.36rem;
             font-weight: 500;
             display: flex;
             align-items: center;
             justify-content: center;
-            border: .7rem solid #000;
+            border: .4rem solid #000;
             &:hover {
                 color: #8E0124;
                 border-color: #8E0124;

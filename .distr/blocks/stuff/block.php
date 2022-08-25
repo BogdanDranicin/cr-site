@@ -19,7 +19,7 @@
                 <div class="stuff__items-item_text">text text text text text text</div>
             </a>
         </div>
-        <div class="stuff__title title _2">Блоки тестов</div>
+        <div class="stuff__title title _2">Учебные материалы</div>
         <div class="stuff__materials">
             <a href="" class="stuff__materials-item">Список литературы</a>
             <a href="" class="stuff__materials-item">Видеоролики</a>
