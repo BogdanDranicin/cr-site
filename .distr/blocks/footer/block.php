@@ -6,7 +6,7 @@
 			<div class="footer__info-project">Проект: Военно-патриотическое направление</div>
 		</div>
 		<div class="footer__contacts">
-			<a href="" class="footer__contacts-inst"><img src="img/footer/inst.svg" class="footer__contacts-img" alt=""></a>
+			<!-- <a href="" class="footer__contacts-inst"><img src="img/footer/inst.svg" class="footer__contacts-img" alt=""></a> -->
 			<a href="" class="footer__contacts-tg"><img src="img/footer/tg.svg" class="footer__contacts-img" alt=""></a>
 			<a href="" class="footer__contacts-vk"><img src="img/footer/vk.svg" class="footer__contacts-img" alt=""></a>
 		</div>

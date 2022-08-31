@@ -1,12 +1,11 @@
 <header class="header">
     <div class="container header__container">
-        <a href="" class="header__logo"><img src="img/header/logo.svg" alt="" class="header__logo-img"></a>
         <nav class="header__nav nav">
             <ul class="nav__list">
                 <li class="nav__list-item droplist">
                     <a class="nav__list-item_link">Тесты</a>
                     <ul class="nav__list">
-                        <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 1</a></li>
+                        <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/tests" class="nav__list-item_link">Блок 1</a></li>
                         <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 2</a></li>
                         <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 3</a></li>
                         <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 4</a></li>
@@ -18,26 +17,32 @@
                 <li class="nav__list-item droplist">
                     <a class="nav__list-item_link">Дополнительные материалы</a>
                     <ul class="nav__list">
-                        <li class="nav__list-item"><a href="" class="nav__list-item_link">Список литературы</a></li>
-                        <li class="nav__list-item"><a href="" class="nav__list-item_link">Видеоролики</a></li>
+                        <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/books" class="nav__list-item_link">Список литературы</a></li>
+                        <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/videos" class="nav__list-item_link">Видеоролики</a></li>
                         <li class="nav__list-item"><a href="" class="nav__list-item_link">Полезные статьи</a></li>
                     </ul>
                 </li>
             </ul>
         </nav>
-        <form action="" class="header__search-bar">
-            <input type="search" name="search" pattern="\f002" required>
-            <button class="header__search-bar_btn" type="submit">
-                <span>Search</span>
-            </button>
-        </form>
+        <div class="header__search">
+            <form action="" class="header__search-form">
+                <input class="header__search-input" type="search" name="search" required>
+                <button class="header__search-button" type="submit">
+                    <svg width="15" height="15" viewBox="0 0 15 15" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path fill-rule="evenodd" clip-rule="evenodd" d="M6.88669 2.03086C4.29769 2.03086 2.19889 4.12966 2.19889 6.71866C2.19889 9.30767 4.29769 11.4065 6.88669 11.4065C9.4757 11.4065 11.5745 9.30767 11.5745 6.71866C11.5745 4.12966 9.4757 2.03086 6.88669 2.03086ZM0.636292 6.71866C0.636292 3.26666 3.43469 0.468262 6.88669 0.468262C10.3387 0.468262 13.1371 3.26666 13.1371 6.71866C13.1371 8.20598 12.6176 9.57197 11.7502 10.6451C11.8883 10.6768 12.0194 10.7464 12.127 10.854L14.4709 13.1979C14.776 13.503 14.776 13.9977 14.4709 14.3028C14.1657 14.6079 13.6711 14.6079 13.3659 14.3028L11.022 11.9589C10.9145 11.8514 10.8448 11.7202 10.8131 11.5822C9.74 12.4496 8.37401 12.9691 6.88669 12.9691C3.43469 12.9691 0.636292 10.1707 0.636292 6.71866Z" fill="black"/>
+                    </svg>
+                </button>
+            </form>
+        </div>
         <div class="header__authorization">
-            <div class="header__authorization-avatar">
-                <img src="img/header/bodya.png" alt="" class="header__authorization-avatar_img">
+            <div class="header__authorization-flex">
+                <div class="header__authorization-avatar">
+                    <img src="img/header/bodya.png" alt="" class="header__authorization-avatar_img">
+                </div>
+                <svg class="header__autorization-vector" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
+                    <path d="M1.23999 1.43359L5.68088 5.87449L10.1218 1.43359" stroke="#757575" stroke-width="2.22045" stroke-linecap="round" stroke-linejoin="round"/>
+                </svg>
             </div>
-            <svg class="header__autorization-vector" width="12" height="7" viewBox="0 0 12 7" fill="none" xmlns="http://www.w3.org/2000/svg">
-                <path d="M1.23999 1.43359L5.68088 5.87449L10.1218 1.43359" stroke="#757575" stroke-width="2.22045" stroke-linecap="round" stroke-linejoin="round"/>
-            </svg>
             <div class="header__authorization-login login">
                 <form class="login__form">
                     <div class="login__field">

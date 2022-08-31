@@ -12,9 +12,10 @@ $(function () {
         )}
     }
     function profile() {
-        let profile = document.querySelector(".header__authorization");
+        let profile = document.querySelector(".header__authorization-flex");
+        let authorization= document.querySelector(".header__authorization");
         profile.addEventListener('click', function(e){
-            profile.classList.toggle('authorization')
+            authorization.classList.toggle('authorization')
         })
     }
   
