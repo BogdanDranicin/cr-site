@@ -1,0 +1,45 @@
+.attempts{
+	&__section{
+		padding-top: 18.5rem;
+	}
+	&__container{
+		padding-bottom: 12rem;
+	}
+	&__title{
+		font-family: "Buran-USSR";
+		font-size: 5rem;
+		line-height: 7.5rem;
+		font-weight: 500;
+		padding-bottom: 7rem;
+	}
+	&__block{
+		display: flex;
+		flex-direction: column;
+		gap: 1.6rem;
+		&-item{
+			background: #F1F1F1;
+			border: .1rem #F1F1F1 solid;
+			padding: 5rem 30rem 5rem 8rem;
+			display: flex;
+			&_title{
+				margin-right: 34.5rem;
+				font-size: 2rem;
+				line-height: 5.6rem;
+				font-weight: 500;
+			}
+			&_points{
+				font-size: 2rem;
+				font-weight: 500;
+				line-height: 5.6rem;
+				color: #8E0124;
+				margin-right: 7.3rem;
+			}
+			&_date{
+				font-size: 2rem;
+				font-weight: 500;
+				line-height: 5.6rem;
+				color: #4E4E4E;
+			}
+		}
+	}
+}

@@ -126,6 +126,7 @@
             position: absolute;
             min-width: 30rem;
             transition: .2s;
+            box-shadow: 0 0.4rem 3.4rem rgba(0, 0, 0, 0.25);
             &__form{
                 display: flex;
                 flex-direction: column;
@@ -149,7 +150,18 @@
                 width: 100%;
                 font-weight: 400;
                 font-size: 1.10933rem;
+                border: none;
                 line-height: 143%;
+            }
+            &__submit{
+                border: 0.1rem #707C8B solid;
+                border-radius: 0.4rem;
+                background: white;
+                color: #11253D;
+                &:hover{
+                    transition: .2s;
+                    background: #E6E6E6;
+                }
             }
         }
         &.authorization{

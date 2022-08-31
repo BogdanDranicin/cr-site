@@ -53,7 +53,8 @@ include_once $ROOT . 'version.php';
       {#% include 'books/block.php' %#}
     <?php } ?>
     <?php if ( $version == 'profile' ) { ?>
-      {% include 'profile/block.php' %}
+      {% include 'results/block.php' %}
+      {% include 'attempts/block.php' %}
     <?php } ?>
     {% include 'footer/block.php' %}
     {% endblock %}
