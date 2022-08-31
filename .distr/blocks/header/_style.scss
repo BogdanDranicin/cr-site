@@ -1,7 +1,7 @@
 .header {
     position: fixed;
     top: 0;
-    z-index: 999;
+    z-index: 99999;
     width: 100%;
     height: 6.5rem;
     background: #fff;
@@ -19,10 +19,15 @@
         align-items: center;
     }
     &__search {
+        margin-left: auto;
         &-form {
+            height: 3.125rem;
             width: 23.44rem;
             position: relative;
             border-radius: 6px;
+            display: flex;
+            align-items: center;
+            justify-content: center;
         }
         &-input {
             width: 100%;
@@ -38,15 +43,15 @@
             border-radius: 0.31252rem;
         }
         &-button {
-            height: 42px;
-            width: 42px;
+            height: 2.88rem;
+            width: 3.125rem;
             position: absolute;
-            top: 0;
-            right: 0;
+            top: 0.15636rem;
+            right: 0.15636rem;
             cursor: pointer;
             border: none;
             outline: none;
-            background: transparent;
+            background: white;
         }
     }
     .nav {
@@ -108,6 +113,14 @@
         margin-left: 1.8rem;
         cursor: pointer;
         position: relative;
+        &-flex{
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            gap: 0.792rem;
+            width: 100%;
+            height: 100%;
+        }
         &-avatar{
             border-radius: 50%;
             background: #AEAEAE;
@@ -117,6 +130,10 @@
         }
         svg{
             transition: .2s;
+        }
+        &-eye{
+            position: absolute;
+            right: 3.868rem;
         }
         .login{
             overflow: hidden;
@@ -133,25 +150,31 @@
                 gap: 1.98rem;
                 padding: 3.645rem 3.09rem 3.486rem;
                 background: white;
+                cursor: default;
             }
             &__field{
-                padding: 1.109rem 1.268rem;
                 display: flex;
                 justify-content: space-between;
                 align-items: center;
-                border: 0.792381px solid #CFD3D8;
-                border-radius: 3.16952px;
-                &:focus{
-                    background-color: #707C8B;
+                border: 0.0792381rem solid #CFD3D8;
+                border-radius: 0.316952rem;
+                &:focus-within{
+                    border-color: #707C8B;
                 }
             }
             &__input{
+                padding: 1.109rem 1.268rem;
                 color: #11253D;
                 width: 100%;
                 font-weight: 400;
                 font-size: 1.10933rem;
                 border: none;
+                border-radius: 0.316952rem;
                 line-height: 143%;
+                position: relative;
+                &:focus{
+                    outline: none;
+                }
             }
             &__submit{
                 border: 0.1rem #707C8B solid;

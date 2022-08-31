@@ -2,6 +2,7 @@
 
 $ROOT = $_SERVER['DOCUMENT_ROOT'] . '/';
 $version = isset($_GET['version']) ? urldecode( strtolower($_GET['version']) ) : '';
+$BASE_HREF = '//' . $_SERVER['HTTP_HOST'] . (!empty($_SERVER['DOCUMENT_URI']) ? str_replace(substr(str_replace('index.php', '', $_SERVER['DOCUMENT_URI']), 1), '', $_SERVER['REQUEST_URI']) : '');
 
 include_once $ROOT . 'version.php';
 ?>
@@ -23,9 +24,9 @@ include_once $ROOT . 'version.php';
   <!-- Link Swiper's CSS -->
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper/swiper-bundle.min.css"/>
 
-  <link rel="stylesheet" href="css/style.css">
-  <link rel="stylesheet" href="css/responsive.css">
   
+  {% block head %}
+  {% endblock %}
   
 </head>
 
@@ -33,30 +34,6 @@ include_once $ROOT . 'version.php';
 
   <div class="wrapper">
     {% block blocks %}
-    {% include 'header/block.php' %}
-    <?php if ( $version == '' ) { ?>
-      {% include 'main/block.php' %}
-      {% include 'event/block.php' %}
-      {% include 'stuff/block.php' %}
-    <?php } ?>
-    <?php if ( $version == 'test' ) { ?>
-      {% include 'test-main/block.php' %}
-      {% include 'test-video/block.php' %}
-      {% include 'quiz/block.php' %}
-      {% include 'thanks/block.php' %}
-      {#% include 'related/block.php' %#}
-    <?php } ?>
-    <?php if ( $version == 'videos' ) { ?>
-      {% include 'videos/block.php' %}
-    <?php } ?>
-    <?php if ( $version == 'books' ) { ?>
-      {#% include 'books/block.php' %#}
-    <?php } ?>
-    <?php if ( $version == 'profile' ) { ?>
-      {% include 'results/block.php' %}
-      {% include 'attempts/block.php' %}
-    <?php } ?>
-    {% include 'footer/block.php' %}
     {% endblock %}
   </div>
 
@@ -68,7 +45,8 @@ include_once $ROOT . 'version.php';
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
-  <script src="js/script.js"></script>
+  {% block js %}
+  {% endblock %}
 </body>
 
 </html>
