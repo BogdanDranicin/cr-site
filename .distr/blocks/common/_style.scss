@@ -21,7 +21,7 @@ body {
 }
 
 img {
-    max-width: 100%;
+    width: 100%;
     border: 0;
 }
 
@@ -67,14 +67,15 @@ textarea {
 
 .title {
     font-family: "Buran-USSR", serif;
-    font-size: 8rem;
+    font-size: 4.5rem;
 }
 
 .button {
-    padding: 1.6rem 3.6rem 1.6rem 2.6rem;
-    border: 0.44488rem solid #000;
+    padding: 1.233rem 2.54rem 1.525rem 1.861rem;
+    border: 0.337349rem solid #000;
     color: #000;
     font-weight: 500;
+    font-size: 1.82rem;
     display: flex;
     align-items: center;
     justify-content: center;

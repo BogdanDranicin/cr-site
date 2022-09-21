@@ -2,9 +2,13 @@
     &__section {
         padding: 16.4rem 2rem 4.5rem;
         background: linear-gradient(360deg, #000000 0%, rgba(0, 0, 0, 0) 100%), url(../img/main/bg_1.png) bottom center / auto 100% no-repeat;
+        min-height: 57.4rem;
+        display: flex;
+        align-items: flex-end;
     }
     &__title {
-        font-size: 11rem;
+        font-weight: 400;
+        font-size: 7.56rem;
         line-height: 111%;
         color: white;
         text-transform: uppercase;
