@@ -1,0 +1,7 @@
+.header{
+    @media(max-width: 1200px){
+        &__container{
+            gap: 3.9rem;
+        }
+    }
+}

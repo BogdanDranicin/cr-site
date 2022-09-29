@@ -1,0 +1,35 @@
+.account{
+    padding-top: 23rem;
+    padding-bottom: 1.53rem;
+    &__title{
+        font-size: 80px;
+        line-height: 94%;
+        margin-bottom: 7rem;
+        margin-left: 1rem;
+    }
+    &__profile{
+        display: flex;
+        gap: 6.1rem;
+        margin-left: 1rem;
+        &-photo{
+            max-width: 25rem;
+        }
+        &-desc{
+            &_name{
+                font-weight: 500;
+                font-size: 3.5rem;
+                line-height: 120%;
+                color: #8E0124;
+                margin-bottom: 2rem;
+            }
+            &_mail{
+                font-size: 2.8rem;
+                line-height: 135%;
+            }
+            &_curse{
+                font-size: 2.8rem;
+                line-height: 135%;
+            }
+        }
+    }
+}

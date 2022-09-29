@@ -10,7 +10,7 @@
 		font-size: 5rem;
 		line-height: 3.4rem;
 		font-weight: 400;
-		padding-bottom: 7rem;
+		margin-bottom: 10rem;
 	}
 	&__block{
 		display: flex;
@@ -18,20 +18,55 @@
 		justify-content: space-between;
 		gap: 5rem;
 		&-item{
-			width: 34rem;
-			height: 25.6rem;
+			width: 29.35rem;
+			height: 35.485rem;
 			position: relative;
 			display: flex;
 			align-items: flex-start;
 			justify-content: flex-end;
+			&:hover{
+				.books__block-item_card{
+					background: #8E0124;
+					&-title{
+						color: white;
+					}
+					&-author{
+						color: white;
+					}
+				}
+			}
 			&_img{
 				position: absolute;
 				z-index: 999;
+				height: 26.523rem;
+				top: 0;
+				width: auto;
+				left: 2.165rem;
 			}
-			// &_title{
-			// 	border: 0.4rem #8E0124 solid;
-			// 	color: #8E0124;
-			// }
+			&_card{
+				position: absolute;
+				flex-direction: column;
+				display: flex;
+				justify-content: flex-end;
+				gap: 1.129rem;
+				height: 11.969rem;
+				width: 100%;
+				padding: 2.225rem;
+				border: 0.19rem #8E0124 solid;
+				color: #8E0124;
+				bottom: 0;
+				left: 0;
+				transition: .2s;
+				&-title{
+					font-size: 2.40576rem;
+					line-height: 105%;
+					font-weight: 500;
+				}
+				&-author{
+					font-size: 1.80432rem;
+					line-height: 110%;
+				}
+			}
 		}
 	}
 }
