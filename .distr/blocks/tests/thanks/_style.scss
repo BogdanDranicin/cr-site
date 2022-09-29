@@ -30,11 +30,14 @@
 			&_hour{
 				position: absolute;
 				width: 0.4rem;
-				height: 1.4rem;
+				height: 1.2rem;
 				left: 1.4rem;
-				top: 0.4rem;
+				top: 1.5rem;
 				background: #000;
 				border-radius: 1rem;
+				animation: now 6s infinite linear;
+				transform-origin: 50% 10%;
+
 			}
 			&_minutes{
 				position: absolute;
@@ -46,11 +49,6 @@
 				border-radius: 1rem;
 				animation: now 2.5s infinite linear;
 				transform-origin: 50% 10%;
-				@keyframes now {
-					100%{
-						transform: rotate(360deg);
-					}
-				}
 			}
 		}
 	}
@@ -69,5 +67,10 @@
 				transition: 0.5s;
 			}
 		}
+	}
+}
+@keyframes now {
+	100%{
+		transform: rotate(360deg);
 	}
 }

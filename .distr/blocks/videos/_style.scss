@@ -27,6 +27,9 @@
 			&_img{
 				position: absolute;
 				z-index: 999;
+				max-width: 31rem;
+				right: 0;
+				top: 0;
 			}
 			&::after{
 				content: 'Название видео';

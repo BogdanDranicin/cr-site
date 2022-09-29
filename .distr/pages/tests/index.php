@@ -7,10 +7,10 @@
 
 {% block blocks %}
     {% include 'header/block.php' %}
-    {% include 'test-main/block.php' %}
-    {% include 'test-video/block.php' %}
-    {% include 'quiz/block.php' %}
-    {% include 'thanks/block.php' %}
+    {% include 'tests/test-main/block.php' %}
+    {% include 'tests/test-video/block.php' %}
+    {% include 'tests/quiz/block.php' %}
+    {% include 'tests/thanks/block.php' %}
     {% include 'footer/block.php' %}
 {% endblock %}
 

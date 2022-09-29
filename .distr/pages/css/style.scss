@@ -16,19 +16,18 @@
 
 
 /* Blocks */
-
-@import 'common/_style';
 @import 'header/_style';
 @import 'main/_style';
 @import 'videos/_style';
 @import 'books/_style';
-@import 'attempts/_style';
-@import 'results/_style';
+@import 'profile/account/_style';
+@import 'profile/attempts/_style';
+@import 'profile/results/_style';
 @import 'event/_style';
 @import 'stuff/_style';
-@import 'test-main/_style';
-@import 'test-video/_style';
-@import 'quiz/_style';
-@import 'thanks/_style';
+@import 'tests/test-main/_style';
+@import 'tests/test-video/_style';
+@import 'tests/quiz/_style';
+@import 'tests/thanks/_style';
 @import 'related/_style';
 @import 'footer/_style';

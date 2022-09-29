@@ -1,9 +1,6 @@
 .attempts{
 	&__section{
-		padding-top: 18.5rem;
-	}
-	&__container{
-		padding-bottom: 12rem;
+		padding-top: 8rem;
 	}
 	&__title{
 		font-family: "Buran-USSR";
@@ -19,25 +16,25 @@
 		&-item{
 			background: #F1F1F1;
 			border: .1rem #F1F1F1 solid;
-			padding: 5rem 30rem 5rem 8rem;
+			padding: 1.431rem 5rem;
 			display: flex;
 			&_title{
 				margin-right: 34.5rem;
 				font-size: 2rem;
-				line-height: 5.6rem;
+				line-height: 282%;
 				font-weight: 500;
 			}
 			&_points{
 				font-size: 2rem;
 				font-weight: 500;
-				line-height: 5.6rem;
+				line-height: 282%;
 				color: #8E0124;
 				margin-right: 7.3rem;
 			}
 			&_date{
 				font-size: 2rem;
 				font-weight: 500;
-				line-height: 5.6rem;
+				line-height: 282%;
 				color: #4E4E4E;
 			}
 		}
