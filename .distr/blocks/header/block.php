@@ -1,8 +1,32 @@
 <header class="header">
     <div class="container header__container">
-        <a href="" class="header__logo">Кадровый<br>резерв</a>
+        <a href="<?= $BASE_HREF ?>" class="header__logo">Кадровый<br>резерв</a>
         <div class="header__centernav">
-            <nav class="header__nav nav">
+            <nav class="header__nav nav mob">
+                <ul class="nav__list">
+                    <li class="nav__list-item droplist">
+                        <a class="nav__list-item_link">Тесты</a>
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/tests" class="nav__list-item_link">Блок 1</a></li>
+                            <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 2</a></li>
+                            <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 3</a></li>
+                            <li class="nav__list-item"><a href="" class="nav__list-item_link">Блок 4</a></li>
+                        </ul>
+                    </li>
+                    <li class="nav__list-item">
+                        <a href="" class="nav__list-item_link">Календарь</a>
+                    </li>
+                    <li class="nav__list-item droplist">
+                        <a class="nav__list-item_link">Дополнительные материалы</a>
+                        <ul class="nav__list">
+                            <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/books" class="nav__list-item_link">Список литературы</a></li>
+                            <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/videos" class="nav__list-item_link">Видеоролики</a></li>
+                            <li class="nav__list-item"><a href="" class="nav__list-item_link">Полезные статьи</a></li>
+                        </ul>
+                    </li>
+                </ul>
+            </nav>
+            <nav class="header__nav nav desk">
                 <ul class="nav__list">
                     <li class="nav__list-item droplist">
                         <a class="nav__list-item_link">Тесты</a>

@@ -65,9 +65,28 @@
         }
     }
     .nav {
+        &.desk{
+            .nav__list-item{
+                &:hover{
+                    background: #D9D9D9;
+                    .nav__list{
+                        padding: 2.4rem 0;
+                        max-height: 90rem;
+                        justify-content: flex-start;
+                        gap: 0;
+                        &-item{
+                            &:hover{
+                                background: #D9D9D9;
+                            }
+                        }
+                    }
+                }
+            }
+        }
         &__list {
             display: flex;
             gap: 1rem;
+            
             &-item {
                 position: relative;
                 display: flex;
@@ -83,6 +102,7 @@
                     cursor: pointer;
                 }
                 .nav__list{
+                    z-index: 9999999;
                     position: absolute;
                     overflow: hidden;
                     max-height: 0rem;
@@ -96,16 +116,46 @@
                     background: #FFFFFF;
                     box-shadow: 0px 0.4rem 3.4rem rgba(0, 0, 0, 0.25);
                 }
-                &:hover{
-                    background: #D9D9D9;
+                
+            }
+        }
+        &.mob{
+            // display: none;
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            background: #ccc;
+            z-index: 10000;
+            max-height: 0px;
+            overflow: hidden;
+            transition: .3s;
+            .nav__list{
+                flex-direction: column;
+                align-items: center;
+                max-width: 360px;
+                margin: 0 auto;
+                &-item{
+                    height: auto;
+                    flex-direction: column;
+                    width: 100%;
+                    &_link{
+                        text-align: center;
+                    }
                     .nav__list{
-                        padding: 2.4rem 0;
-                        max-height: 90rem;
-                        justify-content: flex-start;
-                        gap: 0;
-                        &-item{
-                            &:hover{
-                                background: #D9D9D9;
+                        position: static;
+                    }
+                    &.active{
+                        background: #D9D9D9;
+                        .nav__list{
+                            padding: 2.4rem 0;
+                            max-height: 90rem;
+                            justify-content: flex-start;
+                            gap: 0;
+                            &-item{
+                                &:hover{
+                                    background: #D9D9D9;
+                                }
                             }
                         }
                     }

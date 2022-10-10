@@ -4,4 +4,36 @@
             gap: 3.9rem;
         }
     }
+    @media (max-width: 1080px){
+        font-size: 1.6rem;
+        &__search-form{
+            width: 19rem;
+        }
+    }
+    @media (max-width: 992px){
+        display: flex;
+        &__container{
+            gap: 1.5rem;
+        }
+        &__centernav{
+            justify-content: flex-end;
+        }
+        .nav{
+            &.desk{
+                display: none;
+            }
+            &.mob{
+                &.active{
+                    // display: block;
+                    max-height: 1000px;
+                }
+            }
+        }
+        &__authorization{
+            display: none;
+        }
+    }
+    @media (max-width: 575px) {
+        height: 5.87rem;
+    }
 }

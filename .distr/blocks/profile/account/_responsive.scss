@@ -1,0 +1,82 @@
+.account{
+    @media(max-width: 1200px){
+        padding-top: 15rem;
+        &__title{
+            font-size: 5.5rem;
+            margin-bottom: 4rem;
+        }
+        
+        &__profile{
+            gap: 3rem;
+            &-photo{
+                max-width: 19rem;
+            }
+            &-desc{
+                &_name{
+                    font-size: 3.1rem;
+                }
+                &_mail{
+                    font-size: 2.2rem;
+                }
+                &_curse{
+                    font-size: 2.4rem;
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 789px){
+        padding-bottom: 4rem;
+    }
+    @media(max-width: 698px){
+        padding-top: 11rem;
+        &__title{
+            font-size: 4.7rem;
+            margin-bottom: 3.5rem;
+        }
+        
+        &__profile{
+            gap: 2rem;
+            &-photo{
+                max-width: 16rem;
+            }
+            &-desc{
+                &_name{
+                    font-size: 2.4rem;
+                }
+                &_mail{
+                    font-size: 1.8rem;
+                }
+                &_curse{
+                    font-size: 2rem;
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 450px){
+        &__title{
+            font-size: 3.5rem;
+            margin-bottom: 3.5rem;
+        }
+        
+        &__profile{
+            gap: 1.8rem;
+            &-photo{
+                max-width: 13.325rem;
+            }
+            &-desc{
+                &_name{
+                    font-size: 1.863rem;
+                    margin-bottom: 1rem;
+                }
+                &_mail{
+                    font-size: 1.5rem;
+                }
+                &_curse{
+                    font-size: 1.5rem;
+                }
+            }
+        }
+    }
+}

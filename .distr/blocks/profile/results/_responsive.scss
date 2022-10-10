@@ -1,0 +1,161 @@
+.results{
+    @media(max-width: 1090px){
+        &__block{
+            &-item{
+                &_title{
+                }
+                .stat{
+                    &__item{
+                        &-title{
+                            max-width: 21.122rem;
+                        }
+                    }
+                    justify-content: space-between;
+                }
+                &.active{
+                    .stat{
+                        gap: 2rem;
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 935px){
+        padding: 4rem 2rem;
+        &__block{
+            &-item{
+                .stat{
+                    &__item{
+                        &-title{
+                            font-size: 1.8rem;
+                            max-width: 16.8rem;
+                        }
+                        &-progress{
+                            min-width: 18rem;
+                            min-height: 18rem;
+							border: .6rem solid #8E0124;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 792px){
+        &__title{
+            padding-bottom: 0;
+            margin-bottom: 3rem;
+        }
+        &__block{
+            &-item{
+			    border: 0.2rem #AFAFAF solid;
+                &_title{
+                    &-title{
+                        line-height: 110%;
+                        font-size: 2.4rem;
+                    }
+                }
+                .stat{
+                    flex-wrap: wrap;
+                    justify-content: center;
+                    &__item{
+                        &-progress{
+                            min-width: 17rem;
+                            min-height: 17rem;
+                            font-size: 4.3rem;
+							border: .4rem solid #8E0124;
+                            margin-bottom: 1.2rem;
+                        }
+                        &-title{
+                            line-height: 140%;
+                        }
+                    }
+                }
+                &.active{
+                    .results__block-item{
+                        &_title{
+                            &-title{
+                                margin-bottom: 2rem;
+                            }
+                        }
+                    }
+                    .stat{
+                        margin-bottom: 2rem;
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 525px){
+        padding: 3.5rem 2rem;
+        &__title{
+            font-size: 3.5rem;
+            margin-bottom: 2rem;
+            line-height: 120%;
+        }
+        &__block{
+            &-item{
+                padding: 1.5rem 2rem;
+                .stat{
+                    justify-content: flex-start;
+                    &__item{
+                        flex-direction: row;
+                        gap: 2rem;
+                        width: 100%;
+                        max-width: 35rem;
+                        &-title{
+                            max-width: 21.122rem;
+                            text-align: left;
+                        }
+                        &-progress{
+                            font-size: 3.2rem;
+                            min-width: 14rem;
+                            min-height: 14rem;
+							border: .4rem solid #8E0124;
+                        }
+                    }
+                }
+            }
+        }
+    }
+
+    @media(max-width: 360px){
+        &__title{
+            font-size: 1.9906rem;
+        }
+        &__block{
+            &-item{
+                padding: 1.5rem 2rem;
+                &_title{
+                    &-title{
+                        font-size: 1.6rem;
+                    }
+                }
+                &.active{
+                    .stat{
+                        margin-bottom: 0;
+                    }
+                }
+                .stat{
+                    justify-content: flex-start;
+                    &__item{
+                        gap: 1.1rem;
+                        &-title{
+                            font-size: 1.6rem;
+                            max-width: 15rem;
+                            text-align: left;
+                        }
+                        &-progress{
+                            font-size: 2.1433rem;
+                            min-width: 9.6rem;
+                            min-height: 9.6rem;
+							border: .306919rem solid #8E0124;
+                        }
+                    }
+                }
+            }
+        }
+    }
+}

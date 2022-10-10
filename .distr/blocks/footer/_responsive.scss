@@ -1,0 +1,40 @@
+.footer{
+    @media(max-width: 678px){
+        &__container{
+            flex-direction: column;
+        }
+        &__info{
+            font-size: 1.2rem;
+            &-project{
+                margin-top: .9rem;
+            }
+            div{
+                margin-bottom: .9rem;
+            }
+        }
+        &__contacts{
+            width: 9.2rem;
+            &-img{
+                max-width: 2.569rem;
+            }
+        }
+    }
+	
+	// &__info{
+	// 	font-size: 1.6rem;
+	// 	line-height: 1.8rem;
+	// 	color: #757575;
+	// 	&-project{
+	// 		margin-top: 3rem;
+	// 	}
+	// 	div{
+	// 		margin-bottom: 1.2rem;
+	// 	}
+	// }
+	// &__contacts{
+	// 	width: 13rem;
+	// 	display: flex;
+	// 	justify-content: space-between;
+	// 	align-items: center;
+	// }
+}

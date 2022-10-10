@@ -4,23 +4,31 @@
 			<div class="attempts__block">
 				<div class="attempts__block-item">
 					<div class="attempts__block-item_title">Тест 1: Тема теста</div>
-					<div class="attempts__block-item_points">10 баллов</div>
-					<div class="attempts__block-item_date">01.01.2021</div>
+					<div class="attempts__block-item_right">
+						<div class="attempts__block-item_points">10 баллов</div>
+						<div class="attempts__block-item_date">01.01.2021</div>
+					</div>
 				</div>
 				<div class="attempts__block-item">
 					<div class="attempts__block-item_title">Тест 1: Тема теста</div>
-					<div class="attempts__block-item_points">10 баллов</div>
-					<div class="attempts__block-item_date">01.01.2021</div>
+					<div class="attempts__block-item_right">
+						<div class="attempts__block-item_points">10 баллов</div>
+						<div class="attempts__block-item_date">01.01.2021</div>
+					</div>
 				</div>
 				<div class="attempts__block-item">
 					<div class="attempts__block-item_title">Тест 1: Тема теста</div>
-					<div class="attempts__block-item_points">10 баллов</div>
-					<div class="attempts__block-item_date">01.01.2021</div>
+					<div class="attempts__block-item_right">
+						<div class="attempts__block-item_points">10 баллов</div>
+						<div class="attempts__block-item_date">01.01.2021</div>
+					</div>
 				</div>
 				<div class="attempts__block-item">
 					<div class="attempts__block-item_title">Тест 1: Тема теста</div>
-					<div class="attempts__block-item_points">10 баллов</div>
-					<div class="attempts__block-item_date">01.01.2021</div>
+					<div class="attempts__block-item_right">
+						<div class="attempts__block-item_points">10 баллов</div>
+						<div class="attempts__block-item_date">01.01.2021</div>
+					</div>
 				</div>
 			</div>
 	</div>

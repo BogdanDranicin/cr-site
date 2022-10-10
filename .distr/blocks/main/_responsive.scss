@@ -1,0 +1,27 @@
+.main{
+    @media (max-width: 1080px){
+        &__section{
+            min-height: 43rem;
+        }
+        &__title{
+            font-size: 5.6rem;
+        }
+    }
+    @media (max-width: 769px) {
+        &__section{
+            min-height: 38rem;
+        }
+        &__title{
+            font-size: 4.4rem;
+        }
+    }
+    @media (max-width: 575px) {
+        &__section{
+            margin-top: 5.87rem;
+            min-height: 16.8rem;
+        }
+        &__title{
+            font-size: 2.74rem;
+        }
+    }
+}
