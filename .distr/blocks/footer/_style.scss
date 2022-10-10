@@ -1,5 +1,5 @@
 .footer{
-	padding: 2rem 0;
+	padding: 2rem 2rem;
 	&__container{
 		display: flex;
 		justify-content: space-between;
@@ -20,5 +20,19 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: center;
+		&-vk{
+			&:hover{
+				path{
+					fill: #577ea8;
+				}
+			}
+		}
+		&-tg{
+			&:hover{
+				path{
+					fill: #4099d1;
+				}
+			}
+		}
 	}
 }

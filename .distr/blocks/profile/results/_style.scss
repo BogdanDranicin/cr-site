@@ -2,10 +2,6 @@
 	&__section{
 		padding: 1.5rem 2rem 8rem;
 	}
-	&__container{
-		padding-bottom: 12rem;
-		
-	}
 	&__title{
 		font-family: "Buran-USSR";
 		font-size: 5rem;
@@ -31,8 +27,8 @@
 				}
 				.stat{
 					display: flex;
-					gap: 6.5rem;
 					margin-bottom: 0rem;
+					gap: 0rem;
 					&__item{
 						transition: .3s;
 						overflow: hidden;
@@ -61,19 +57,21 @@
 						}
 					}
 				}
-				&.active{
-					.results__block-item{
-						&_title{
-							&-title{
-								margin-bottom: 4rem;
-							}
+				
+			}
+			&.active{
+				.results__block-item{
+					&_title{
+						&-title{
+							margin-bottom: 4rem;
 						}
 					}
-					.stat{
-						margin-bottom: 3rem;
-						&__item{
-							max-height: 90rem;
-						}
+				}
+				.stat{
+					gap: 6.5rem;
+					margin-bottom: 3rem;
+					&__item{
+						max-height: 90rem;
 					}
 				}
 			}
