@@ -1,0 +1,86 @@
+.quiz {
+    
+    @media(max-width: 968px){
+        .open-question{
+            .answers__textarea{
+                padding: 2rem 3.5rem;
+                font-size: 2.6rem;
+            }
+        }
+    }
+    @media(max-width:600px){
+        padding: 3.5rem 0;
+        &__question{
+            &-title{
+                margin-bottom: 3rem;
+                font-size: 2.8rem;
+            }
+            .answers{
+                margin-bottom: 3rem;
+                &__item{
+                    height: 6.7rem;
+                    &-answer{
+                        font-size: 2.2rem;
+                        padding: 1.5rem 3rem;
+                    }
+                }
+            }
+        }
+        
+        .open-question{
+            .answers__textarea{
+                padding: 2rem 2.5rem;
+                font-size: 2.2rem;
+            }
+        }
+    }
+    
+    @media(max-width: 460px){
+        &__question{
+            &-title{
+                margin-bottom: 4rem;
+                font-size: 2.257rem;
+                line-height: 135%;
+            }
+            .answers{
+                margin-bottom: 3rem;
+                gap: 1.213rem;
+                &__item{
+                    height: 5.05rem;
+                    &-answer{
+                        font-size: 1.6rem;
+                        padding: 1.3rem 2rem 1.3rem 2.5rem;
+                        &::before {
+                            width: 1.1rem;
+                            height: 1.1rem;
+                            border: 0.03914rem solid #CFD3D8;
+                            border-radius: 0.078rem;
+                        }
+                    }
+                    
+                    &-point {
+                        &:checked+label {
+                            &::before {
+                                border-radius: 0.078rem;
+                                background: #8E0124 url(../img/tests/quiz/checked.svg) center center / .548rem .548rem no-repeat;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        
+        .open-question{
+            .answers__textarea{
+                padding: 1.6rem;
+                font-size: 1.6rem;
+            }
+        }
+        &__btn-next{
+            font-size: 1.4rem;
+            width: 13.8rem;
+            height: 3.3rem;
+        }
+    }
+}
+// .quiz .open-question .answers__textarea

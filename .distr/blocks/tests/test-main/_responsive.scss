@@ -1,0 +1,116 @@
+.test-main{
+    @media(max-width: 1024px){
+        
+        &__section{
+            padding: 18rem 2rem 4rem;
+        }
+        &__container{
+            gap: 2.8rem;
+        }
+        &__img{
+            min-width: 30rem;
+        }
+        &__test{
+            gap: 2.8rem;
+            &-title{
+                font-size: 4.5rem;
+                line-height: 140%;
+            }
+            &-questions{
+                font-size: 2.2rem;
+                gap: 3rem;
+                height: 4.8rem;
+            }
+            &-description{
+                font-size: 2rem;
+                line-height: 120%;
+            }
+        }
+    }
+    
+    @media(max-width: 860px){
+        
+        &__img{
+            min-width: 25rem;
+            width: 100%;
+            max-width: 35rem;
+        }
+        &__container{
+            flex-direction: column;
+        }
+        
+        &__test{
+            gap: 2.2rem;
+            &-title{
+                font-size: 4rem;
+                display: none;
+                &._mob{
+                    display: block;
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 600px){
+        &__section{
+            padding: 14rem 2rem 4rem;
+        }
+        
+        &__test{
+            gap: 2.8rem;
+            &-title{
+                font-size: 4rem;
+            }
+            &-questions{
+                font-size: 2rem;
+            }
+            &-description{
+            }
+        }
+    }
+    
+    @media(max-width: 452px){
+        
+        &__test{
+            gap: 2.3rem;
+            &-title{
+                font-size: 4rem;
+            }
+            &-questions{
+                height: 3rem;
+                font-size: 1.63rem;
+                gap: 2rem;
+            }
+            &-description{
+                font-size: 1.483rem;
+                line-height: 180%;
+            }
+        }
+    }
+    
+    @media(max-width: 360px){
+        
+        &__test{
+            gap: 2.3rem;
+            &-title{
+                font-size: 4rem;
+            }
+            &-questions{
+                min-height: 3rem;
+                max-height: 100%;
+                height: 100%;
+                font-size: 1.4rem;
+                gap: 2rem;
+                line-height: 120%;
+                padding-right: .5rem;
+                img{
+                    max-width: 2.5rem;
+                }
+            }
+            &-description{
+                font-size: 1.483rem;
+                line-height: 180%;
+            }
+        }
+    }
+}
