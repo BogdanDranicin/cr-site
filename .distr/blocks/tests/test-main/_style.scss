@@ -6,13 +6,12 @@
 		display: flex;
 		flex-wrap: nowrap;
     	max-height: 100%;
+		gap: 4.5rem;
 	}
 	&__img{
 		width: 43rem;
-		background: #D9D9D9;
 	}
 	&__test{
-		margin-left: 6.5rem;
 		display: flex;
 		flex-direction: column;
 		gap: 5rem;
@@ -21,6 +20,9 @@
 			font-size: 5rem;
 			line-height: 7.5rem;
 			font-weight: 400;
+			&._mob{
+				display: none;
+			}
 		}
 		&-questions{
 			border: #EEEEEE 0.1rem solid;

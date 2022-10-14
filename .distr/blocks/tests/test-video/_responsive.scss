@@ -1,0 +1,146 @@
+.test-video{
+    @media(max-width: 1250px){
+        &__title{
+        }
+        &__video{
+		    padding: 0 12rem;
+            &-btn{
+                .button{
+                    &:hover{
+                    }
+                }
+            }
+            &-start{
+                &::after{
+                }
+                &::before{
+                }
+            }
+        }
+    }
+    
+    @media(max-width: 968px){
+        &__title{
+        }
+        &__video{
+		    padding: 0 5rem;
+            height: 70rem;
+            &-btn{
+                margin-top: 3.3rem;
+                .button{
+                    &:hover{
+                    }
+                }
+            }
+            &-start{
+                &::after{
+                    left: 50.5%;
+                    border-top: 2.5rem solid transparent;
+                    border-left: 4rem solid #8E0124;
+                    border-bottom: 2.5rem solid transparent;
+                }
+                &::before{
+                    width: 12rem;
+                    height: 12rem;
+                }
+            }
+        }
+    }
+    
+    
+    @media(max-width: 768px){
+        &__title{
+        }
+        &__video{
+		    padding: 0 3.5rem;
+            height: 60rem;
+            &-btn{
+                margin-top: 2.5rem;
+                .button{
+                    width: 16rem;
+                    font-size: 1.8rem;
+                    &:hover{
+                    }
+                }
+            }
+            &-start{
+                &::after{
+                    left: 50.5%;
+                    border-top: 2rem solid transparent;
+                    border-left: 3.5rem solid #8E0124;
+                    border-bottom: 2rem solid transparent;
+                }
+                &::before{
+                    width: 10rem;
+                    height: 10rem;
+                }
+            }
+        }
+    }
+    
+    
+    
+    @media(max-width: 600px){
+        padding: 4rem 0;
+        &__title{
+            margin-left: 2rem;
+            font-size: 3.2rem;
+            padding-bottom: 2.5rem;
+        }
+        &__video{
+		    padding: 2rem 2.5rem;
+            height: 45rem;
+            &-btn{
+                margin-top: 2rem;
+                gap: 1.5rem;
+                .button{
+                    width: 14rem;
+                    font-size: 1.6rem;
+                    border: white solid .2rem;
+                }
+            }
+            &-start{
+                &::after{
+                    border-top: 1.8rem solid transparent;
+                    border-left: 3.2rem solid #8E0124;
+                    border-bottom: 1.8rem solid transparent;
+                }
+                &::before{
+                    width: 8rem;
+                    height: 8rem;
+                }
+            }
+        }
+    }
+    
+    
+    @media(max-width: 450px){
+        &__title{
+            font-size: 3.2rem;
+            padding-bottom: 2.5rem;
+        }
+        &__video{
+		    padding: 0 2.5rem;
+            height: 45rem;
+            &-btn{
+                margin-top: 2rem;
+                .button{
+                    font-weight: 500;
+                    width: 11rem;
+                    font-size: 1.0rem;
+                }
+            }
+            &-start{
+                &::after{
+                    border-top: 1rem solid transparent;
+                    border-left: 2rem solid #8E0124;
+                    border-bottom: 1rem solid transparent;
+                }
+                &::before{
+                    width: 5.6rem;
+                    height: 5.6rem;
+                }
+            }
+        }
+    }
+}

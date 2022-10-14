@@ -23,8 +23,8 @@
 		&-watch{
 			position: relative;
 			margin-right: 2.5rem;
-			width: 4rem;
-			height: 4rem;
+			min-width: 4rem;
+			min-height: 4rem;
 			border: #000 0.45rem solid;
 			border-radius: 50%;
 			&_hour{
@@ -56,11 +56,12 @@
 		display: flex;
 		justify-content: flex-end;
 		&-main{
-			border: #000 0.4rem solid;
+			border: 8E0124 0.4rem solid;
 			font-size: 2rem;
 			line-height: 2.4rem;
 			padding: 0.8rem 2rem;
 			font-weight: 500;
+			color: #8E0124;
 			&:hover{
 				color: #8E0124;
 				border-color: #8E0124;

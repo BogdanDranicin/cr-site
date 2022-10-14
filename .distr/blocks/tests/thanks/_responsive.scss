@@ -1,0 +1,71 @@
+.thanks{
+    @media(max-width: 650px){
+        &__title{
+            font-size: 5.2rem;
+            line-height: 120%;
+            margin-bottom: 3.5rem;
+        }
+        &__subtitle{
+            max-width: 42rem;
+            margin-bottom: 4rem;
+            margin-left: 4rem;
+        }
+    }
+    
+    @media(max-width: 450px){
+        &__title{
+            font-size: 3.6rem;
+            line-height: 120%;
+            margin-bottom: 2.9rem;
+        }
+        &__subtitle{
+            max-width: 42rem;
+            margin-bottom: 4rem;
+            margin-left: 10%;
+            font-size: 1.7rem;
+            line-height: 120%;
+
+            &-watch{
+                margin-right: 2rem;
+                min-width: 2.6rem;
+                min-height: 2.6rem;
+                border: #000 0.3rem solid;
+                &_hour{
+                    width: 0.25rem;
+                    height: .8rem;
+                    left: .9rem;
+                    top:  .9rem;
+                    border-radius: .3rem;
+    
+                }
+                &_minutes{
+                    width: 0.25rem;
+                    height: 1rem;
+                    left: .9rem;
+                    top: .9rem;
+                    border-radius: .3rem;
+                }
+            }
+        }
+        
+	&__btn{
+		&-main{
+			border: #8E0124 0.25rem solid;
+			font-size: 1.4rem;
+			line-height: 120%;
+			padding: .5rem 1.2rem;
+		}
+	}
+    }
+    
+    @media(max-width: 360px){
+        &__title{
+            font-size: 3.2rem;
+        }
+        &__subtitle{
+            margin-bottom: 3rem;
+            margin-left: 2rem;
+            font-size: 1.5rem;
+        }
+    }
+}
