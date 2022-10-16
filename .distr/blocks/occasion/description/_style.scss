@@ -1,0 +1,30 @@
+.description{
+    &__title{
+        margin-bottom: 5.5rem;
+    }
+    &__text{
+        font-size: 2rem;
+        line-height: 185%;
+        margin-bottom: 15rem;
+    }
+
+    .swiper {
+        max-width: 103.4rem;
+        // height: 29rem;
+        &-button{
+            &-next, 
+            &-prev{
+                position: absolute;
+                top: 50%;
+            }
+            &-next{
+                left: calc(100% - 50px);
+            }
+        }
+        &__container{
+            position: relative;
+            padding: 0 6rem;
+            max-width: 143.4rem;
+        }
+    }
+}

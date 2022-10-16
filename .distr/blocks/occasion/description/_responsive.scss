@@ -1,0 +1,35 @@
+.description{
+    @media(max-width: 987px){
+        &__title{
+            font-size: 3.8rem;
+            margin-bottom: 3rem;
+        }
+        &__text{
+            margin-bottom: 10rem;
+            font-size: 2rem;
+        }
+    }
+    
+    @media(max-width: 575px){
+        padding-top: 9rem;
+        &__title{
+            font-size: 3.4rem;
+            line-height: 120%;
+            margin-bottom: 2rem;
+        }
+        &__text{
+            margin-bottom: 5rem;
+            font-size: 1.8rem;
+        }
+    }
+    
+    @media(max-width: 400px){
+        &__title{
+            font-size: 3.2rem;
+            margin-bottom: 3.1rem;
+        }
+        &__text{
+            font-size: 1.2rem;
+        }
+    }
+}

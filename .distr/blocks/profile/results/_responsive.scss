@@ -5,6 +5,7 @@
                 &_title{
                 }
                 .stat{
+                    gap: 2rem;
                     &__item{
                         &-title{
                             max-width: 21.122rem;
@@ -14,7 +15,6 @@
                 }
                 &.active{
                     .stat{
-                        gap: 2rem;
                     }
                 }
             }
