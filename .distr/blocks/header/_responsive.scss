@@ -11,11 +11,18 @@
         }
     }
     @media (max-width: 992px){
+        &__burger{
+            display: block;
+        }
+        &__search{
+            display: none;
+        }
         display: flex;
         &__container{
             gap: 1.5rem;
         }
         &__centernav{
+            width: unset;
             justify-content: flex-end;
         }
         .nav{
@@ -35,5 +42,34 @@
     }
     @media (max-width: 575px) {
         height: 5.87rem;
+        &__burger{
+            width: 2.24rem;
+            span{
+                &:nth-child(2), &:nth-child(3){
+                    top: .524rem;
+                }
+                &:nth-child(4){
+                    top: 1.132rem;
+                }
+            }
+        }
+    }
+    @media (max-width: 425px) {
+        .nav{
+            &.mob{
+                width: 29.2rem;
+                .nav{
+                    &__list{
+                        &-item{
+                            &_link{
+                                font-size: 1.375rem;
+                            }
+                        }
+                    }
+                }
+            }
+        }
+        &__burger{
+        }
     }
 }

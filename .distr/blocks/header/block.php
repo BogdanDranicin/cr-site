@@ -1,9 +1,15 @@
-<header class="header">
+<header class="header header-login">
     <div class="container header__container">
         <a href="<?= $BASE_HREF ?>" class="header__logo">Кадровый<br>резерв</a>
         <div class="header__centernav">
             <nav class="header__nav nav mob">
                 <ul class="nav__list">
+                    <li class="nav__list-item _join">
+                        <a href="" class="nav__list-item_link">Войти</a>
+                    </li>
+                    <li class="nav__list-item _lk">
+                        <a href="" class="nav__list-item_link">Личный кабинет</a>
+                    </li>
                     <li class="nav__list-item droplist">
                         <a class="nav__list-item_link">Тесты</a>
                         <ul class="nav__list">
@@ -23,6 +29,9 @@
                             <li class="nav__list-item"><a href="<?= $BASE_HREF ?>/videos" class="nav__list-item_link">Видеоролики</a></li>
                             <li class="nav__list-item"><a href="" class="nav__list-item_link">Полезные статьи</a></li>
                         </ul>
+                    </li>
+                    <li class="nav__list-item _quit">
+                        <a href="" class="nav__list-item_link">Выйти</a>
                     </li>
                 </ul>
             </nav>
@@ -92,6 +101,17 @@
                     <input type="submit" class="button__text button login__submit" value="Войти">		
                 </form>
             </div>
+            <div class="header__authorization-authorized authorized">
+               <input type="submit" class="button__text button lk__submit" value="Личный кабинет">
+               <input type="submit" class="button__text button quit__submit" value="Выйти">
+            </div>
+        </div>
+        
+        <div class="header__burger">
+            <span></span>
+            <span></span>
+            <span></span>
+            <span></span>
         </div>
     </div>
 </header>
