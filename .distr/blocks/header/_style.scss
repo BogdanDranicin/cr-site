@@ -123,13 +123,17 @@
             // display: none;
             position: absolute;
             top: 0;
-            left: 0;
-            width: 100%;
-            background: #ccc;
+            right: 0;
+            width: 35rem;
+            background: #fff;
             z-index: 10000;
             max-height: 0px;
             overflow: hidden;
             transition: .3s;
+            box-shadow: 0px .4rem .6rem rgba(0, 0, 0, 0.25);
+            &.active{
+                padding: 5rem 3rem 3.6rem;
+            }
             .nav__list{
                 flex-direction: column;
                 align-items: center;
@@ -140,7 +144,17 @@
                     flex-direction: column;
                     width: 100%;
                     &_link{
-                        text-align: center;
+                        text-align: start;
+                        font-weight: 400;   
+                    }
+                    &._quit{
+                        display: none;
+                        a{
+                            color: #818181;
+                        }
+                    }
+                    &._lk{
+                        display: none;
                     }
                     .nav__list{
                         position: static;
@@ -241,6 +255,8 @@
                 border-radius: 0.4rem;
                 background: white;
                 color: #11253D;
+                font-size: 1.3rem;
+                cursor: pointer;
                 &:hover{
                     transition: .2s;
                     background: #E6E6E6;
@@ -256,6 +272,117 @@
             }
             .login{
                 max-height: 90rem;
+            }
+        }
+        .authorized{
+            position: absolute;
+            top: 100%;
+            right: 0;
+            background: white;
+            min-width: 30rem;
+            transition: .2s;
+            box-shadow: 0 0.4rem 3.4rem rgba(0, 0, 0, 0.25);
+            gap: 2rem;
+            flex-direction: column;
+            display: none;
+            cursor: default;
+            overflow: hidden;
+            max-height: 0rem;
+            &.active{
+                padding: 3.6rem 3.09rem 4rem;
+                max-height: 90rem;
+            }
+            .button{
+                border: 0.1rem #707C8B solid;
+                border-radius: 0.4rem;
+                background: white;
+                color: #11253D;
+                font-size: 1.3rem;
+                cursor: pointer;
+                &:hover{
+                    transition: .2s;
+                    background: #E6E6E6;
+                }
+            }
+        }
+        
+    }
+    
+    &-login{
+        .authorized{
+            display: flex;
+        }
+        .login{
+            display: none;
+        }
+        .nav{
+            &.mob{
+                .nav__list{
+                    &-item{
+                        &._join{
+                            display: none;
+                        }
+                        &._lk{
+                            display: block;
+                        }
+                        &._quit{
+                            display: block;
+                        }
+                    }
+                }
+            }
+        }
+    }
+    &__burger{
+        display: none;
+        z-index: 999999999;
+        width: 2.5rem;
+        height: 2rem;
+        position: relative;
+        // margin: 50px auto;
+        transform: rotate(0deg);
+        transition: .5s ease-in-out;
+        cursor: pointer;
+        span {
+            display: block;
+            position: absolute;
+            height: .3rem;
+            width: 100%;
+            background: #8E0124;
+            // border-radius: 9px;
+            opacity: 1;
+            left: 0;
+            transform: rotate(0deg);
+            transition: .25s ease-in-out;
+            &:nth-child(1) {
+                top: 0;
+            }
+            &:nth-child(2), &:nth-child(3) {
+                top: .624rem;
+            }
+            &:nth-child(4) {
+                top: 1.232rem;
+            }
+        }
+        
+        &.open{
+            span {
+                &:nth-child(1) {
+                    top: .624rem;
+                    width: 0%;
+                    left: 50%;
+                }
+                &:nth-child(2) {
+                    transform: rotate(45deg);
+                }
+                &:nth-child(3) {
+                    transform: rotate(-45deg);
+                }
+                &:nth-child(4) {
+                    top: .624rem;
+                    width: 0%;
+                    left: 50%;
+                }
             }
         }
     }

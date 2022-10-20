@@ -1,7 +1,16 @@
 $(function () {
 	initMenu();
 	profile();
-
+    burgerMenu();
+    
+    function burgerMenu() {
+        let burger = document.querySelector(".header__burger");
+        let burgerMenu= document.querySelector(".mob");
+        burger.addEventListener('click', function(e){
+            $(this).toggleClass('open');
+            burgerMenu.classList.toggle('active')
+        })
+    }
 
     function initMenu() {
         let droplist = document.querySelectorAll(".droplist");
@@ -13,9 +22,11 @@ $(function () {
     }
     function profile() {
         let profile = document.querySelector(".header__authorization-flex");
-        let authorization= document.querySelector(".header__authorization");
+        let authorization = document.querySelector(".header__authorization");
+        let authorized = document.querySelector(".authorized")
         profile.addEventListener('click', function(e){
             authorization.classList.toggle('authorization')
+            authorized.classList.toggle('active')
         })
     }
   
