@@ -1,0 +1,115 @@
+.calendar{
+    @media(max-width: 1050px){
+        
+        &__slick{
+            max-width: 80rem;
+        }
+        
+        .tabs{
+            &-nav{
+                grid-template-columns: repeat(4, calc(80rem / 4));
+                grid-template-rows: repeat(3, 10.3rem);
+            }
+        }
+    }
+    
+    @media(max-width: 842px){
+        &__year{
+            height: 6rem;
+            font-size: 2.6rem;
+        }
+        &__slick{
+            max-width: 60rem;
+        }
+        
+        .tabs{
+            &-nav{
+                grid-template-columns: repeat(4, calc(60rem / 4));
+                grid-template-rows: repeat(3, 7rem);
+                &-item{
+                    a{
+                        font-size: 1.4rem;
+                    }
+                }
+            }
+        }
+        .slick{
+            &-arrow{
+                top: 2.3rem;
+            }
+        }
+    }
+    
+    @media(max-width: 640px){
+        &__title{
+            margin-bottom: 5rem;
+            font-size: 3.2rem;
+        }
+        &__year{
+            height: 5rem;
+            font-size: 2.1rem;
+        }
+        &__slick{
+            max-width: 40rem;
+        }
+        
+        .tabs{
+            padding-bottom: 1.5rem;
+            &-nav{
+                grid-template-columns: repeat(4, calc(40rem / 4));
+                grid-template-rows: repeat(3, 5.5rem);
+                &-item{
+                    a{
+                        font-size: 1.3rem;
+                    }
+                }
+            }
+        }
+        .slick{
+            &-arrow{
+                top: 1.7rem;
+            }
+        }
+    }
+    @media (max-width: 575px) {
+        padding-top: 11rem;
+        padding-right: 0;
+        padding-left: 0;
+        .section{
+            padding-right: 0;
+            padding-left: 0;
+        }
+    }
+    @media(max-width: 450px){
+        &__title{
+            margin-left: 2rem;
+        }
+        &__year{
+            height: 2.5rem;
+            font-size: 1.4rem;
+        }
+        &__slick{
+            max-width: 32rem;
+        }
+        
+        .tabs{
+            padding-bottom: 1.5rem;
+            &-nav{
+                grid-template-columns: repeat(4, calc(32rem / 4));
+                grid-template-rows: repeat(3, 3.738rem);
+                &-item{
+                    a{
+                        font-size: .9rem;
+                    }
+                }
+            }
+        }
+        .slick{
+            &-arrow{
+                top: .954rem;
+                width: .372rem;
+                height: .772rem;
+            }
+        }
+    }
+}

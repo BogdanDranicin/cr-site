@@ -2,6 +2,7 @@ $(function () {
     swiper();
     function swiper() {
         const swiper = new Swiper('.swiper', {
+            allowTouchMove: false,
             loop: true,
             navigation: {
               nextEl: '.swiper-button-next',

@@ -21,7 +21,7 @@ include_once $ROOT . 'version.php';
   <link href="https://synergy.ru/img/favicon.ico" type="image/x-icon" rel="shortcut icon">
   <link href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" rel="stylesheet">
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css"/>
-  
+  <!-- <link rel="stylesheet" type="text/css" href="slick/slick-theme.css"/> -->
 
   
   {% block head %}
@@ -39,8 +39,8 @@ include_once $ROOT . 'version.php';
 
 
  <!-- Swiper JS -->
+  <script type="text/javascript" src="//code.jquery.com/jquery-migrate-1.2.1.min.js"></script>
   <script src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
- 
   <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" defer></script>
   <script src="https://cdnjs.cloudflare.com/ajax/libs/fancybox/3.5.7/jquery.fancybox.min.js" defer="defer"></script>
