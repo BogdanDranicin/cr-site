@@ -33,6 +33,9 @@
                 &.active{
                     // display: block;
                     max-height: 1000px;
+                    overflow: auto;
+                    min-height: 100vh;
+                    height: 100%;
                 }
             }
         }

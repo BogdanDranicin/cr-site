@@ -13,10 +13,10 @@ $(function () {
     }
 
     function initMenu() {
-        let droplist = document.querySelectorAll(".droplist");
+        let droplist = document.querySelectorAll(".droplist .nav__list-item_link");
         for ( let i = 0; i < droplist.length; i++ ){
             droplist[i].addEventListener ("click", function(e) {
-                this.classList.toggle("active")
+                this.parentNode.classList.toggle("active")
             }
         )}
     }
