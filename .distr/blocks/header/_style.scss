@@ -153,11 +153,65 @@
                             color: #818181;
                         }
                     }
+                    &.droplist{
+                        .login{
+                            width: 100%;
+                            padding: 0 2rem;
+                            transition: .2s;
+                            &__form{
+                                display: flex;
+                                flex-direction: column;
+                                gap: 1.98rem;
+                                background: white;
+                                cursor: default;
+                            }
+                            &__field{
+                                display: flex;
+                                justify-content: space-between;
+                                align-items: center;
+                                border: 0.0792381rem solid #CFD3D8;
+                                border-radius: 0.316952rem;
+                                &:focus-within{
+                                    border-color: #707C8B;
+                                }
+                            }
+                            &__input{
+                                padding: 1.109rem 1.9rem 1.109rem 1.268rem;
+                                color: #11253D;
+                                width: 100%;
+                                font-weight: 400;
+                                font-size: 1.10933rem;
+                                border: none;
+                                border-radius: 0.316952rem;
+                                line-height: 143%;
+                                position: relative;
+                                &:focus{
+                                    outline: none;
+                                }
+                            }
+                            &__submit{
+                                border: 0.1rem #707C8B solid;
+                                border-radius: 0.4rem;
+                                background: white;
+                                color: #11253D;
+                                font-size: 1.3rem;
+                                cursor: pointer;
+                                &:hover{
+                                    transition: .2s;
+                                    background: #E6E6E6;
+                                }
+                            }
+                        }
+                    }
                     &._lk{
                         display: none;
                     }
                     .nav__list{
                         position: static;
+                    }
+                    .header__authorization-eye{
+                        opacity: 0;
+                        transition: .3s;
                     }
                     &.active{
                         background: #D9D9D9;
@@ -171,6 +225,9 @@
                                     background: #D9D9D9;
                                 }
                             }
+                        }
+                        .header__authorization-eye{
+                            opacity: 1;
                         }
                     }
                 }
